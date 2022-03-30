@@ -1,0 +1,955 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* theme */
+#shade-one {
+    color: rgb(85, 4, 4);
+    font-size: 1.5rem;
+    padding-left: 0.6rem;
+}
+
+#shade-two {
+    color: rgb(65, 61, 4);
+    font-size: 1.5rem;
+    padding-left: 0.6rem;
+}
+
+#shade-three {
+    color: rgb(16, 3, 77);
+    font-size: 1.5rem;
+    padding-left: 0.6rem;
+}
+
+#shade-four {
+    color: rgb(3, 53, 16);
+    font-size: 1.5rem;
+    padding-left: 0.6rem;
+}
+
+li {
+    list-style: none;
+    margin-top: 2rem;
+}
+
+.links {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 2rem;
+    font-weight: bold;
+}
+
+.links:hover {
+    color: white;
+    font-size: 2rem;
+    border-bottom: 0.1rem solid white;
+    transition: 1s;
+}
+
+.theme-container {
+    border: 0.1rem solid white;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    background-color: rgba(255, 255, 255, 0.654);
+    width: 100%;
+    margin-top: 2rem;
+}
+
+/* custom scroll bar */
+body::-webkit-scrollbar {
+    width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to bottom, rgb(255, 152, 255), rgb(174, 174, 174) 50%);
+    border-radius: 2rem;
+}
+
+/* ---------------------menu starts------------------------------*/
+.toggle-menu {
+    color: rgb(217, 0, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+    margin-left: 95%;
+    outline: none;
+    margin-top: 2rem;
+    border-radius: 50%;
+    animation: menuanimation 2s infinite;
+}
+
+@keyframes menuanimation {
+    0% {
+        -webkit-box-shadow: 0px 1px 13px 3px #000000;
+        box-shadow: 0px 1px 13px 3px #000000;
+    }
+
+    25% {
+        -webkit-box-shadow: 0px 1px 13px 3px rgb(217, 0, 255);
+        box-shadow: 0px 1px 13px 3px rgb(217, 0, 255);
+    }
+
+    75% {
+        -webkit-box-shadow: 0px 1px 13px 3px #000000;
+        box-shadow: 0px 1px 13px 3px #000000;
+    }
+
+    100% {
+        -webkit-box-shadow: 0px 1px 13px 3px rgb(217, 0, 255);
+        box-shadow: 0px 1px 13px 3px rgb(217, 0, 255);
+    }
+}
+
+.toggle-menu:hover {
+    color: rgb(217, 0, 255);
+}
+
+
+
+.fa-circle-xmark {
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+}
+
+.fa-circle-xmark:hover {
+    border-radius: 50%;
+}
+
+.aside {
+    background: rgba(128, 0, 128, 0.742);
+    width: 20%;
+}
+
+/*-------------------------------menu ends-----------------------*/
+#video-header {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 90vh;
+    object-fit: cover;
+    z-index: -1;
+    width: 100%;
+}
+
+h1 {
+
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.stored {
+    text-align: center;
+    font-size: 3rem;
+}
+
+/* ----------------------header ends---------------------*/
+
+.au {
+    color: rgb(135, 5, 158);
+    font-weight: bold;
+    font-size: 3rem;
+
+}
+
+.h-a-u {
+    margin-top: 35rem;
+}
+
+.scroll {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 70vh;
+    border: .1rem solid rgb(95, 95, 95);
+    border-radius: 0.2rem;
+    margin-top: 3rem;
+}
+
+.au-t {
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    color: rgb(99, 98, 98);
+    text-align: justify;
+    text-shadow: 0px 0px 0px black;
+}
+
+.owl-theme {
+    color: rgb(115, 7, 113);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+/* ----------------about us section ends -------------------------*/
+
+.om {
+    color: rgb(135, 5, 158);
+    font-weight: bold;
+    font-size: 3rem;
+    text-shadow: 0px 0px 0px rgb(255, 255, 255);
+}
+
+.three-m {
+    font-size: 2.5rem;
+    font-weight: 500;
+    font-family: sans-serif;
+    color: white;
+    transform: translateZ(50px);
+    background-color: rgb(0, 0, 0);
+    border-radius: 2rem;
+    animation: bxs 3s infinite;
+}
+
+@keyframes bxs {
+    0% {
+        border: 0.2rem solid white;
+    }
+
+    50% {
+        border: 0.2rem solid rgb(255, 187, 42);
+    }
+
+    100% {
+        border: 0.2rem solid rgb(0, 255, 60);
+    }
+}
+
+.motive-texts {
+    background-image: linear-gradient(to right, rgb(83, 83, 83), rgb(145, 4, 126));
+    transform-style: preserve-3d;
+    perspective: 5000px;
+}
+
+/*----------------------- motive section ends-----------------------------------*/
+
+.three-d-wallpaper {
+    margin-top: 7rem;
+    background-image: url("smart.png");
+    height: 75vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.bi-award-fill::before {
+    content: "\f153";
+    font-size: 4rem;
+    margin-top: 50%;
+    background-image: linear-gradient(to right, white, rgb(255, 175, 235));
+    border: 0.2rem solid black;
+    border-radius: 50%;
+    padding: 4rem;
+    animation: a 3s infinite;
+}
+
+@keyframes a {
+    0% {
+        background-image: linear-gradient(to right, white, rgb(255, 255, 118));
+    }
+
+    50% {
+        background-image: linear-gradient(to right, white, rgb(255, 186, 154));
+    }
+
+    75% {
+        background-image: linear-gradient(to right, white, rgb(255, 175, 235));
+    }
+
+    100% {
+        background-image: linear-gradient(to right, white, rgb(162, 255, 141));
+    }
+}
+
+.bi-tags-fill::before {
+    content: "\f153";
+    font-size: 4rem;
+    margin-top: 50%;
+    background-image: linear-gradient(to right, white, rgb(255, 175, 235));
+    border: 0.2rem solid black;
+    border-radius: 50%;
+    padding: 4rem;
+    animation: b 3s infinite;
+}
+
+@keyframes b {
+    0% {
+        background-image: linear-gradient(to right, white, rgb(255, 255, 118));
+    }
+
+    50% {
+        background-image: linear-gradient(to right, white, rgb(255, 186, 154));
+    }
+
+    75% {
+        background-image: linear-gradient(to right, white, rgb(255, 175, 235));
+    }
+
+    100% {
+        background-image: linear-gradient(to right, white, rgb(162, 255, 141));
+    }
+}
+
+.bi-tools::before {
+    content: "\f153";
+    font-size: 4rem;
+    margin-top: 50%;
+    background-image: linear-gradient(to right, white, rgb(255, 175, 235));
+    border: 0.2rem solid black;
+    border-radius: 50%;
+    padding: 4rem;
+    animation: c 3s infinite;
+}
+
+@keyframes c {
+    0% {
+        background-image: linear-gradient(to right, white, rgb(255, 255, 118));
+    }
+
+    50% {
+        background-image: linear-gradient(to right, white, rgb(255, 186, 154));
+    }
+
+    75% {
+        background-image: linear-gradient(to right, white, rgb(255, 175, 235));
+    }
+
+    100% {
+        background-image: linear-gradient(to right, white, rgb(162, 255, 141));
+    }
+}
+
+.bi-house-heart-fill::before {
+    content: "\f153";
+    font-size: 4rem;
+    margin-top: 50%;
+    background-image: linear-gradient(to right, white, rgb(255, 175, 235));
+    border: 0.2rem solid black;
+    border-radius: 50%;
+    padding: 4rem;
+    animation: d 3s infinite;
+}
+
+@keyframes d {
+    0% {
+        background-image: linear-gradient(to right, white, rgb(255, 255, 118));
+    }
+
+    50% {
+        background-image: linear-gradient(to right, white, rgb(255, 186, 154));
+    }
+
+    75% {
+        background-image: linear-gradient(to right, white, rgb(255, 175, 235));
+    }
+
+    100% {
+        background-image: linear-gradient(to right, white, rgb(162, 255, 141));
+    }
+}
+
+.bi-person-workspace::before {
+    content: "\f153";
+    font-size: 4rem;
+    margin-top: 50%;
+    background-image: linear-gradient(to right, white, rgb(255, 175, 235));
+    border: 0.2rem solid black;
+    border-radius: 50%;
+    padding: 4rem;
+    animation: e 3s infinite;
+}
+
+@keyframes e {
+    0% {
+        background-image: linear-gradient(to right, white, rgb(255, 255, 118));
+    }
+
+    50% {
+        background-image: linear-gradient(to right, white, rgb(255, 186, 154));
+    }
+
+    75% {
+        background-image: linear-gradient(to right, white, rgb(255, 175, 235));
+    }
+
+    100% {
+        background-image: linear-gradient(to right, white, rgb(162, 255, 141));
+    }
+}
+
+p {
+    font-size: 3rem;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+/* ----------------five ends----------------------- */
+
+.focus {
+    font-size: 2rem;
+    color: black;
+    text-shadow: 0px 0px 0px black;
+    margin-top: 3rem;
+}
+
+.swiper {
+    width: 100%;
+    height: 60vh;
+    padding: 30px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 30vh;
+    padding: 45px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+.nxt {
+    color: purple;
+
+}
+
+.prv {
+    color: purple;
+
+}
+
+.swiper-pagination-bullet {
+    background-color: rgb(68, 3, 59) !important;
+    border: 0.2rem solid rgb(99, 255, 174);
+    height: 2vh;
+    width: 1vw;
+}
+
+.beautiful {
+    margin-top: 7rem;
+}
+
+.sub-h-one {
+    color: black;
+    text-shadow: 0px 0px 0px black;
+    font-size: 1.8rem;
+    margin-top: 2rem;
+}
+
+.sub-h-two {
+    color: black;
+    text-shadow: 0px 0px 0px black;
+    font-size: 1.8rem;
+}
+
+.info {
+    font-size: 1.3rem;
+    color: rgb(99, 98, 98);
+    text-shadow: 0px 0px 0px black;
+    font-family: sans-serif;
+}
+
+.bi-check2-circle {
+    font-size: 1.5rem;
+}
+
+
+/*-------------------We Focus to Make Your Walls Beautiful-----------------------*/
+
+
+.o-s {
+    font-size: 1.3rem;
+    text-shadow: 0px 0px 0px black;
+    color: rgb(0, 0, 0);
+    margin-top: 3rem;
+}
+
+.svr-offr {
+    font-size: 3rem;
+    text-shadow: 0px 0px 0px black;
+    color: rgb(0, 0, 0);
+}
+
+.services-section {
+    margin-top: 7rem;
+}
+
+.card-text {
+    font-size: 1.2rem;
+    color: black;
+    text-shadow: 0px 0px 0px black;
+}
+
+.cb {
+    border: 0.2rem solid black;
+    background-image: linear-gradient(to top, rgb(0, 0, 0)20%, rgb(0, 234, 255));
+}
+
+.card-title {
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.card-text {
+    color: gainsboro;
+}
+
+/*------------------------------------------services section completes-----------------------------------*/
+
+
+
+.tws {
+    font-size: 4rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 2px rgb(255, 217, 0);
+    font-weight: bold;
+    font-family: sans-serif;
+    padding: 5rem;
+    animation: brandName 4s infinite;
+}
+
+@keyframes brandName {
+    0% {
+        color: rgb(255, 255, 255);
+        text-shadow: 2px 2px 2px rgb(0, 255, 255);
+
+    }
+
+    25% {
+        color: rgb(0, 255, 238);
+        text-shadow: 2px 2px 2px rgb(255, 255, 0);
+
+    }
+
+    75% {
+        color: rgb(77, 255, 0);
+        text-shadow: 2px 2px 2px rgb(255, 255, 255);
+
+    }
+
+    100% {
+        color: rgb(238, 0, 255);
+        text-shadow: 2px 2px 2px rgb(255, 255, 0);
+
+    }
+}
+
+.brand-background {
+    background-color: rgb(49, 3, 70);
+    animation: brandColor 4s infinite;
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    width: 80%;
+    margin: auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+@keyframes brandColor {
+    0% {
+        background-color: rgb(49, 3, 70);
+    }
+
+    25% {
+        background-color: rgb(70, 3, 53);
+    }
+
+    75% {
+        background-color: rgb(3, 58, 7);
+    }
+
+    100% {
+        background-color: rgb(49, 46, 1);
+    }
+}
+
+/*-------------------- promotion section ends ---------------------------*/
+
+.map {
+    height: 40vh;
+    width: 100%;
+    margin-bottom: 3rem;
+
+}
+
+.contact-section {
+    background-image: linear-gradient(to bottom, rgb(85, 2, 85), rgb(3, 3, 97));
+}
+
+.mh {
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    margin-top: 3rem;
+    text-shadow: 0px 0px 0px black;
+    font-weight: 500;
+}
+
+.bi-facebook {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.bi-instagram {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.bi-google {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.info-text {
+    color: white;
+    text-shadow: 0px 0px 0px white;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+
+.wtsp {
+    background-color: white;
+    border-radius: 30%;
+}
+
+.bi-telephone-fill {
+    color: white;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+}
+
+.bi-envelope-check {
+    color: white;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+}
+
+.bi-envelope-check::before {
+    content: "\f68c";
+    margin-top: 2rem;
+}
+
+/*--------------------------------------- contact section ends--------------------------------------------*/
+
+
+.to-top {
+    position: fixed;
+    bottom: 5rem;
+    right: 3%;
+    height: 5vh;
+    font-size: 2rem;
+    color: rgba(234, 255, 0, 0.851);
+    background-color: rgba(0, 0, 0, 0.797);
+    border-radius: 50%;
+    opacity: 0;
+    transition: 1s;
+    animation: goTop 3s infinite;
+}
+
+@keyframes goTop {
+    0% {
+        margin-bottom: 2rem;
+    }
+
+    25% {
+        margin-bottom: 3rem;
+    }
+
+    75% {
+        margin-bottom: 2rem;
+    }
+
+    100% {
+        margin-bottom: 3rem;
+    }
+}
+
+.to-top:hover {
+    color: rgb(234, 255, 0);
+    background-color: black;
+}
+
+.to-top.active {
+    opacity: 1;
+}
+
+.mail {
+    font-size: 1.2rem;
+}
+
+/*------------------ media queries for i pad pro--------------------------------*/
+
+@media(max-width:1024px) {
+    .aside {
+        width: 25%;
+    }
+
+    .h-a-u {
+        margin-top: 40rem;
+    }
+
+    #video-header {
+        height: 50vh;
+    }
+
+    .scroll {
+        height: 30vh;
+    }
+
+    .uncle {
+        margin-top: 3rem;
+    }
+
+    .three-m {
+        font-size: 2.2rem;
+        padding: 1.5rem;
+    }
+
+    .three-d-wallpaper {
+        height: 40vh;
+    }
+
+    p {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .swiper {
+        height: 23vh;
+    }
+
+    .swiper-slide {
+        height: 90vh;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .swiper-pagination-bullet {
+        background-color: rgb(68, 3, 59) !important;
+        border: 0.2rem solid rgb(99, 255, 174);
+        height: 1vh;
+        width: 1vw;
+    }
+
+    #swiperrr {
+        margin-top: 5rem;
+    }
+
+    .mh {
+        font-size: 2.5rem;
+    }
+
+    .map {
+        height: 20vh;
+    }
+
+    .mail {
+        font-size: 1.2rem;
+        text-shadow: 0px 0px 0px black;
+    }
+
+    .to-top {
+        background-color: rgb(0, 0, 0);
+    }
+
+}
+
+
+
+/*------------------ media queries for i pad or tablets-------------------------------*/
+
+
+@media(max-width:768px) {
+    .video-header {
+        width: 100%;
+    }
+
+    .stored {
+        font-size: 1.5rem;
+    }
+
+    .h-a-u {
+        margin-top: 35rem;
+    }
+
+    .three-m {
+        font-size: 1.7rem;
+    }
+
+    .bi-award-fill::before {
+        font-size: 1.7rem;
+        padding: 1.7rem;
+        margin-top: 7rem;
+    }
+
+    .bi-tags-fill::before {
+        font-size: 1.7rem;
+        padding: 1.7rem;
+        margin-top: 7rem;
+    }
+
+    .bi-tools::before {
+        font-size: 1.7rem;
+        padding: 1.7rem;
+        margin-top: 7rem;
+    }
+
+    .bi-house-heart-fill::before {
+        font-size: 1.7rem;
+        padding: 1.7rem;
+        margin-top: 7rem;
+    }
+
+    .bi-person-workspace::before {
+        font-size: 1.7rem;
+        padding: 1.7rem;
+        margin-top: 7rem;
+    }
+
+    p {
+        font-size: 1rem;
+        text-shadow: 1px 1px 1px black;
+    }
+
+    .b-walls {
+        width: 100%;
+    }
+
+    #swiperrr {
+        width: 100%;
+    }
+
+    .services-section {
+        margin-top: 20rem;
+    }
+
+    .crdd {
+        width: 100%;
+    }
+
+    .mp-sec {
+        width: 100%;
+    }
+}
+
+
+
+/*------------------ media queries for phone-------------------------------*/
+
+@media(max-width:576px) {
+    #video-header {
+        height: 40vh;
+    }
+
+    .toggle-menu {
+        margin-left: 90%;
+    }
+
+    .stored {
+        font-size: 1rem;
+    }
+
+    .h-a-u {
+        margin-top: 18rem;
+    }
+
+    .three-m {
+        font-size: 2rem;
+    }
+
+    .three-d-wallpaper {
+        height: 130vh;
+    }
+
+    .bi-award-fill::before {
+        margin-top: 2rem;
+    }
+
+    .bi-tags-fill::before {
+        margin-top: 2rem;
+    }
+
+    .bi-tools::before {
+        margin-top: 2rem;
+    }
+
+    .bi-house-heart-fill::before {
+        margin-top: 2rem;
+    }
+
+    .bi-person-workspace::before {
+        margin-top: 2rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    .services-section {
+        margin-top: 5rem;
+    }
+
+    .tws {
+        font-size: 2rem;
+    }
+
+    .links {
+        font-size: 0.8rem;
+    }
+
+    .aside {
+        width: 35%;
+    }
+
+    #shade-one {
+        font-size: 1rem;
+        padding-left: 0rem;
+    }
+
+    #shade-two {
+        font-size: 1rem;
+        padding-left: 0rem;
+    }
+
+    #shade-three {
+        font-size: 1rem;
+        padding-left: 0rem;
+    }
+
+    #shade-four {
+        font-size: 1rem;
+        padding-left: 0rem;
+    }
+
+    .theme-container {
+        padding: 0rem;
+        margin-top: 5rem;
+    }
+
+    .to-top {
+        position: fixed;
+        bottom: 5rem;
+        right: 4%;
+        height: 5vh;
+        font-size: 2rem;
+        color: rgba(234, 255, 0, 0.552);
+        background-color: rgba(0, 0, 0, 0.627);
+        border-radius: 50%;
+        opacity: 0;
+        transition: 1s;
+        animation: goTop 3s infinite;
+    }
+}
